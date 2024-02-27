@@ -32,16 +32,32 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/label01"
-        android:inputType="text"
+        android:inputType="number"
         android:hint="digite"
+        android:textSize="25dp"/>
+    <EditText
+        android:id="@+id/ed02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed01"
+        android:inputType="number"
+        android:hint="digite"
+        android:textSize="25dp"/>
+    <EditText
+        android:id="@+id/ed03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed02"
+        android:inputType="text"
+        android:hint="digite o operador"
         android:textSize="25dp"/>
 
     <TextView
         android:id="@+id/alvo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/ed01"
-        android:text="Texto Alvo!"
+        android:layout_below="@id/ed03"
+        android:text="Resposta!"
         android:layout_centerHorizontal="true"
         android:textSize="25dp"
         android:layout_marginTop="40dp"
@@ -56,6 +72,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="40dp"
         android:src="@drawable/btn_prata" />
+
 
 
 
