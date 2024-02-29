@@ -43,14 +43,47 @@
         android:inputType="number"
         android:hint="digite"
         android:textSize="25dp"/>
-    <EditText
+    <RadioGroup
         android:id="@+id/ed03"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/ed02"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/ed02"
-        android:inputType="text"
-        android:hint="digite o operador"
-        android:textSize="25dp"/>
+        android:layoutDirection="ltr"
+        android:textDirection="ltr"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        >
+        <RadioButton
+            android:id="@+id/mais"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Mais"
+            android:layout_weight="1"
+            />
+        <RadioButton
+            android:id="@+id/menos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menos"
+            android:layout_weight="1"
+            />
+        <RadioButton
+            android:id="@+id/vezes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vezes"
+            android:layout_weight="1"
+            />
+        <RadioButton
+            android:id="@+id/divide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dividir"
+            android:layout_weight="1"
+            />
+    </RadioGroup>
 
     <TextView
         android:id="@+id/alvo"
